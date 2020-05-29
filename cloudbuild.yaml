@@ -1,0 +1,3 @@
+steps:
+  - name: gcr.io/smiling-mark-270607/firebase
+    args: ['deploy', '--project=smiling-mark-270607', '--only=functions']
