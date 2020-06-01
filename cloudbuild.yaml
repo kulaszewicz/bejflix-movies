@@ -9,6 +9,8 @@ steps:
     args:
       - functions
       - deploy
-      - bejflix-movies
+      - bejflix-be
       - --source=.
+      - --verbosity=debug
+      - --runtime=nodejs12
       - --trigger-http
