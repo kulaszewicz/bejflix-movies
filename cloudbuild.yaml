@@ -1,3 +1,16 @@
 steps:
-  - name: gcr.io/smiling-mark-270607/firebase
-    args: ['deploy', '--project=smiling-mark-270607', '--only=functions']
+  - name: node
+    entrypoint: yarn
+    args: ['install']
+  - name: node
+    entrypoint: yarn
+    args: ['build']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - bejflix-be
+      - --source=.
+      - --verbosity=debug
+      - --runtime=nodejs12
+      - --trigger-http
