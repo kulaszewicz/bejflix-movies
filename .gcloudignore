@@ -13,6 +13,7 @@
 # Except these...
 !/test/**
 !/src/**
+!/dist/**
 !cloudbuild.yaml
 !package.json
 !yarn.lock
