@@ -12,5 +12,5 @@ steps:
       - bejflix-be
       - --source=.
       - --verbosity=debug
-      - --runtime=nodejs12
+      - --runtime=nodejs10
       - --trigger-http
