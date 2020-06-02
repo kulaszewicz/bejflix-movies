@@ -14,6 +14,7 @@
 !/test/**
 !/src/**
 !/dist/**
+!index.js
 !cloudbuild.yaml
 !package.json
 !yarn.lock

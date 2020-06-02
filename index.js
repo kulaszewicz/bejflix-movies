@@ -1,3 +1,3 @@
-import { api as Api } from './src';
+import { api as Api } from './dist';
 
 export const api = Api;
