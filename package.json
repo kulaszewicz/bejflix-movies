@@ -68,5 +68,5 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "main": "./dist/index.js"
+  "main": "/dist/index.js"
 }
