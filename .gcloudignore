@@ -15,6 +15,7 @@
 !/src/**
 !/dist/**
 !index.js
+!function.js
 !cloudbuild.yaml
 !package.json
 !yarn.lock
