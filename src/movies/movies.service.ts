@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { Movie } from './interfaces/movie.interface';
+import * as admin from 'firebase-admin'
 
 @Injectable()
 export class MoviesService {
-  private readonly movies: Movie[] = [];
+  db = admin.firestore();
 
-  findAll(): Movie[] {
-    return this.movies;
+  async findAll():  Promise<FirebaseFirestore.DocumentData[]> {
+    const snapshot = await this.db.collection('movies').get()
+    return snapshot.docs.map(movie => movie.data());
   }
 }
