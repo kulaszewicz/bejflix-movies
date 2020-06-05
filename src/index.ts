@@ -20,6 +20,8 @@ export const createNestServer = async (expressInstance) => {
     new ExpressAdapter(expressInstance),
   );
 
+  app.enableCors();
+
   return app.init();
 };
 
